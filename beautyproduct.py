@@ -4,12 +4,12 @@ import numpy as np
 import pickle
 
 # Load the pre-trained model
-model_file_path = r'C:\Users\user\OneDrive\Desktop\Project\best_model.pkl'
+model_file_path = 'best_model.pkl'
 with open(model_file_path, 'rb') as file:
     model = pickle.load(file)
 
 # Load the preprocessed data for feature encoding reference
-preprocessed_file_path = r'C:\Users\user\OneDrive\Desktop\Project\preprocessed_data.csv'
+preprocessed_file_path = 'preprocessed_data.csv'
 df = pd.read_csv(preprocessed_file_path)
 
 # Clean column names
